@@ -1,0 +1,334 @@
+body, h1, h2, h3, p, ul, ol {
+  margin: 0;
+  padding: 0;
+}
+
+
+.top-header {transition: top 0.3s ease-in-out; 
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: red;
+  color: rgb(255, 255, 255);
+  z-index: 1000;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* Add other styles as needed */
+}
+.secondary-header {
+  margin-top: 40px;
+  padding: 20px;
+  text-align: center, left,right;
+  
+}
+.secondary-header {transition: top 0.3s ease-in-out; 
+  position: sticky;
+  top: -50px; /* Adjust as needed to match the top header height */
+  z-index: 999; /* Ensure it appears above content */
+  background-color: rgb(255, 255, 255);
+  color: red;
+  height: 80px;
+  /* Other styles */
+}
+
+.footer {
+  display: block;
+  height: 200px;
+
+  padding: 50px;
+  align-items: center;
+  justify-content: center;
+  bottom: 0;
+  width: 100%;
+  background-color: #333;
+  color: #fff;
+  z-index: 1000;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transition: transform 0.3s ease-in-out; /* Add a transition for smooth effect */
+  transform: translateY(0); /* Initially keep the footer at the bottom */
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px; /* Adjust padding as needed */
+}
+
+.column {
+  width: 45%;
+}
+
+/* Add a class to show the footer */
+.show-footer {
+  transform: translateY(0);
+}
+
+
+
+
+nav ul {
+  list-style-type: none;
+}
+
+nav ul li {
+  display: inline;
+  margin-left: 10px;
+  padding-left: 20px;
+  padding-top: 30px;
+  position: relative;
+  font-weight: bold;
+}
+
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+.file-1 { text-align: center;
+  color: #fff;
+  padding: 20px;
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/TAMASCO_Southern_Gate.jpg/450px-TAMASCO_Southern_Gate.jpg); /* Replace with your image path */
+  background-size: cover; /* Adjust the image size */
+  background-position: center; /* Position the image */
+  height: 50vh; /* Set the height of the main element */
+  /* Additional styles for the main element */
+}
+
+.file-3 { text-align: center;
+  color: #fff;
+  padding: 20px;
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/TAMASCO_Southern_Gate.jpg/450px-TAMASCO_Southern_Gate.jpg); /* Replace with your image path */
+  background-size: cover; /* Adjust the image size */
+  background-position: center; /* Position the image */
+  height: 50vh; /* Set the height of the main element */
+  /* Additional styles for the main element */
+}
+
+.file-2{ /* Background image specific to file 2 */
+  background-image: url('https://st3.depositphotos.com/6009652/18563/v/450/depositphotos_185634642-stock-illustration-library-bookstore-background-cartoon.jpg');
+  /* Other background properties */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  /* Additional styles for file 2 */}
+
+.crest {
+  float: left; /* Floats the badge to the left */
+  margin-left: 40px; /* Adds margin to the right of the badge for spacing */
+  border-radius: 50%; /* Creates a circular badge shape */
+  overflow:visible; /* Clips the image to the shape of the badge */
+  width: 80px; /* Width of the badge */
+  height: 60px; /* Height of the badge */
+  margin-top: -6px;
+}
+
+.crest img {
+  width: 100%; /* Ensures the image fits inside the badge */
+  height: auto; /* Maintains the aspect ratio of the image */
+  display: block; /* Removes any default image spacing */
+}
+ /* Hover effect */
+ li a:hover {
+  color:gold /* Change color on hover */
+  /* Other styles */
+}
+.address {
+  margin-top: auto; /* Push the content to the bottom of the container */
+  text-align: center;
+  padding: 20px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #333;
+  top: 100%; /* Position dropdown below the parent */
+  min-width: 100px;
+  width: 160px;
+  left: 70%;
+  transform: translateX(-60%);
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.dropdown-content a {
+  display: block;
+  padding: 10px 15px;
+  text-decoration: none;
+  color: white;
+  width: 10px;
+}
+.dropdown-content a:hover {
+  background-color: #e30909;
+  right: 60%;
+  transform:translateZ(50%) translateX(50%);
+}
+
+.dropdown {
+  position: relative;
+  display:inline-table;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown.active .dropdown-content {
+  display: block;
+}
+
+nav ul li:hover .dropdown-content {
+    display: block;
+  }
+
+  body {
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+    display: flex;
+    flex-direction: column;
+    min-height: 200vh; /* Ensure the body covers the entire viewport height */
+  }
+  
+  
+  main {
+    flex: 1;
+    /* Add necessary styles for your main content */
+  }
+  p{font-weight:bolder;
+  font-size: medium;}
+  
+  /* Common styles for boxes */
+.box {
+  background-color: lightblue;
+  color: rgb(124, 23, 23);
+  padding: 20px;
+  border-radius: 8px;
+  border: 3px solid #d60707;
+  margin-left: 135px;
+  margin-right: 40px;
+  justify-content:center;
+  width: 300px;
+  height: 200px;
+}
+
+/* Grid layout for four columns */
+.four-columns {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two columns */
+  grid-template-rows: repeat(2, 1fr); /* Two rows */
+  gap: 20px; /* Gap between boxes */
+  height: 100px; /* Set the height of each column */
+  margin: 10px;
+}
+
+/* Styles for two columns layout */
+.two-columns {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+h1,p, h2 {text-align:center;
+  color: white;
+font-weight: bold;}
+
+/* Style for underlining h1 within boxes */
+.box > h1 {
+  text-decoration: underline; /* Add underline to h1 within boxes */
+  color:#7a7a7a;
+  text-decoration-color: #333;
+}
+.box > p{color: #7a7a7a;}
+
+/* Styles for two columns layout */
+.two-columns {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+/* Styles for desktop navigation */
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* Other styles */
+}
+
+/* Styles for mobile hamburger menu */
+.hamburger-menu {
+  display: none; /* Hide by default on larger screens */
+  /* Other styles */
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+  /* Hide desktop navigation */
+  .menu > li {
+    display: none;
+    /* Other styles */
+  }
+  
+  /* Show hamburger menu */
+  .hamburger-menu {
+    display: block;
+    cursor:pointer; /* Add cursor pointer for interaction */
+    /* Other styles */
+  }
+}
+/* Styling for the hamburger icon */
+.hamburger-menu span {
+  display: block;
+  height: 2px; /* Height of each bar */
+  width: 25px; /* Width of each bar */
+  background-color: yellow; /* Color of the bars */
+  margin: 5px 0; /* Spacing between bars */
+}
+
+/* Hide submenu by default */
+.submenu {
+  display: none;
+}
+
+/* Show submenu on hover for desktop */
+.menu li:hover .submenu {
+  display: block;
+}
+
+/* Mobile styles - Collapsed menu */
+/* Example: Use media query for screens below a certain width */
+@media screen and (max-width: 768px) {
+  .has-submenu > a::after {
+    content: '▼'; /* Display arrow or indicator */
+  }
+
+  .has-submenu .submenu {
+    display: none; /* Hide submenu by default */
+  }
+
+  .has-submenu.active .submenu {
+    display: block; /* Show submenu when active */
+  }
+}
+/* Hide submenu by default */
+.submenu {
+  display: none;
+  position: absolute;
+  top: 100%; /* Position below the parent */
+  left: 0;
+  z-index: 1; /* Ensure it appears above other content */
+  background-color: #fff; /* Background color for the dropdown */
+  border: 1px solid #ccc; /* Border for the dropdown */
+}
+
+/* Show submenu when the parent is hovered or focused */
+.has-submenu:hover .submenu {
+  display: block;
+}
+
+.has-submenu:focus-within .submenu {
+  display: block;
+}
